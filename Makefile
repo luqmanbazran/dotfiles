@@ -1,4 +1,4 @@
-.PHONY: test_plan
+.PHONY: testing_plan
 CONTAINER_ID := $(shell docker run -it -d fedora bash) 
 
 testing_plan:
