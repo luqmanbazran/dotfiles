@@ -32,15 +32,18 @@ fi
 zshrc_md5=($(md5sum ~/.zshrc | awk '{print $1}'))
 vimrc_md5=($(md5sum ~/.vimrc | awk '{print $1}'))
 
+zshrc_md5_git=($(md5sum ~/dotfiles/.zshrc | awk '{print $1}'))
+vimrc_md5_git=($(md5sum ~/dotfiles/.vimrc | awk '{print $1}'))
+
 #Compare .zshrc hash
-if [ $zshrc_md5 == "4d3bf12f71e2781cd2182b1fb819ba2b" ]; then
+if [ $zshrc_md5 == $zshrc_md5_git ]; then
     echo ".zshrc file is configured"
 else
     echo ".zshrc file is not configured"
 fi
 
 #Compare .vimrc file
-if [ $vimrc_md5 == "7983a3c3e209b215af87d2e9b9d539ba" ]; then
+if [ $vimrc_md5 == $vimrc_md5_git ]; then
     echo ".vimrc file is configured"
 else
     echo ".vimrc file is not configured"

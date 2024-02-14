@@ -6,7 +6,7 @@ dnf update
 dnf -y install git vim tmux zsh
 
 #Clone a github repo containing the .zshrc and .vimrc to be configured
-git clone https://github.com/luqmanbazran/learnBash.git
+git clone https://github.com/luqmanbazran/dotfiles.git ~/
 
 #Configure .zshrc 
 cp learnBash/.zshrc ~/
