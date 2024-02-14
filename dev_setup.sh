@@ -1,6 +1,6 @@
 #!/bin/bash
 #Updates the packages installed to the newest version
-dnf update
+dnf -y update
 
 #Using the package manager, install git, vim, tmux and zsh
 dnf -y install git vim tmux zsh
