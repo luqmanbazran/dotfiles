@@ -34,15 +34,15 @@ vimrc_md5=($(md5sum ~/.vimrc | awk '{print $1}'))
 
 #Compare .zshrc hash
 if [ $zshrc_md5 == "4d3bf12f71e2781cd2182b1fb819ba2b" ]; then
-    echo ".zshrc file is configured properly"
+    echo ".zshrc file is configured"
 else
-    echo ".zshrc file is not configured properly"
+    echo ".zshrc file is not configured"
 fi
 
 #Compare .vimrc file
 if [ $vimrc_md5 == "7983a3c3e209b215af87d2e9b9d539ba" ]; then
-    echo ".vimrc file is configured properly"
+    echo ".vimrc file is configured"
 else
-    echo ".vimrc file is not configured properly"
+    echo ".vimrc file is not configured"
 fi
 
